@@ -21,3 +21,5 @@ www.practica.dns.bind.	IN A 1.2.3.4
 www			IN A 2.3.4.5
 @			IN A 2.3.4.5
 ```
+
+4. dig practica.dns.bind. @127.0.0.1 any
