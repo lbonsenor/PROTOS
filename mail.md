@@ -7,7 +7,7 @@
 ## Enviar un correo a alguien del ITBA
 `dig +short -t MX itba.edu.ar. | sort -n` y nos conectamos al primer servidor
 
-`nc -v -C aspmx.l.google.com. 25`
+`nc -4 -v -C aspmx.l.google.com. 25`
 EHLO hola.com.ar
 MAIL FROM: <lala@leak.com.ar>
 RCPT TO: <cditoro@itba.edu.ar>
