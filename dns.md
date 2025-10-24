@@ -6,10 +6,10 @@ zone "practica.dns.bind" {
 	file "/etc/bind/bind.local";
 };
 ```
-3. `nano /etc/bind/bind.local"
+3. `nano /etc/bind/bind.local`
 ```
 $TTL 604801					# TTL in secs
-practica.dns.bind.	IN SOA leak.com.ar. lbonsenor.iba.edu.ar (
+practica.dns.bind.	IN SOA leak.com.ar. lbonsenor.itba.edu.ar (
 				1		# Serial
 				604800		# Refresh in secs (7 days)
 				86400		# Retry in secs (1 day)
@@ -22,4 +22,4 @@ www			IN A 2.3.4.5
 @			IN A 2.3.4.5
 ```
 
-4. dig practica.dns.bind. @127.0.0.1 any
+4. `dig practica.dns.bind. @127.0.0.1 any`
