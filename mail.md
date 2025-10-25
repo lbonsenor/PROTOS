@@ -9,18 +9,20 @@
 
 `nc -4 -v -C aspmx.l.google.com. 25`
 
-EHLO hola.com.ar
-MAIL FROM: <lala@leak.com.ar>
-RCPT TO: <cditoro@itba.edu.ar>
-DATA
+	EHLO hola.com.ar
+	MAIL FROM: <lala@leak.com.ar>
+	RCPT TO: <cditoro@itba.edu.ar>
+	DATA
 
-From: "Camila Di Toro" (personal) <cami@leak.com.ar>
-To: "Camila Di Toro" <cditoro@itba.edu.ar>
-Subject: prueba pdc 
-Message-ID: <950120.for60336@example.com>
-MIME-Version: 1.0
-Content-type: text/plain; charset=UTF-8
-Content-transfer-Encoding: quoted-printable
+	From: "Camila Di Toro" (personal) <cami@leak.com.ar>
+	To: "Camila Di Toro" <cditoro@itba.edu.ar>
+	Subject: prueba pdc 
+	Message-ID: <950120.for60336@example.com>
+	MIME-Version: 1.0
+	Content-type: text/plain; charset=UTF-8
+	Content-transfer-Encoding: quoted-printable
 
-Holiiiis
-.
+	Holiiiis
+	.
+	QUIT
+

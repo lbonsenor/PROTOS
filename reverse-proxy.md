@@ -18,6 +18,6 @@ Listen 8080
 ```
 4. `systemctl restart apache2`
 
-# Reverse Proxy
+## Reverse Proxy
 5. `nano /etc/nginx/sites-available/bar` y agregar en location / `proxy_pass http://localhost:8080`
 6. `service nginx restart`
