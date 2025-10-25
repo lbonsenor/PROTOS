@@ -16,6 +16,7 @@
 ## DOVECOT
 1. `sudo apt install dovecot-pop3d`
 2. `netstat -ntlp | grep :110` para checkear que este corriendo
+3. `nc -C localhost 110`
 	CAPA 			<!-- Capacidades -->
 	USER mi-user-de-linux	
 	PASS mi-passwd-de-linux
