@@ -25,4 +25,4 @@
 	DELE 1			<!-- Borro el primer mail -->
 	RSET			<!-- Me arrepenti -->
 	QUIT
-3. `nano /etc/dovecot/conf.d/10-mail.com` y cambiar `mail_location = maildir:~/maildir`
+3. `nano /etc/dovecot/conf.d/10-mail.conf` y cambiar `mail_location = maildir:~/maildir`
