@@ -23,3 +23,10 @@ www			IN A 2.3.4.5
 ```
 
 4. `dig practica.dns.bind. @127.0.0.1 any`
+
+5. Para obtener detalles: `dig SOA sitio.web.com @dns`
+
+6. Para obtener las tablas de routeo: `route` o `ip route`
+
+7. Para ver que puertos estan abiertos: `nmap 123.456.0.1 -p [FROM]-[TO]`
+

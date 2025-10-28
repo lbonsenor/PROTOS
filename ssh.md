@@ -12,3 +12,7 @@
 
 ## Tunel dinamico
 1. `ssh -Dlocalhost:8080 lbonsenor@pampero.itba.edu.ar`
+
+
+## Para utilizar una password archivo
+`-i location/a/archivo`
