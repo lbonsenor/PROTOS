@@ -14,5 +14,6 @@
 1. `ssh -Dlocalhost:8080 lbonsenor@pampero.itba.edu.ar`
 
 
-## Para utilizar una password archivo
+## Para utilizar una passphrase archivo
+`chmod 400 location/a/archivo`
 `-i location/a/archivo`
