@@ -22,3 +22,13 @@ ACCEPT: Acepta
 DROP: Rechaza silenciosamente
 REJECT: Rechazar con aviso
 RETURN: Volver a la cadena anterior
+
+## Configurar NAT en R
+1. Para ver las reglas de NAT: `iptables -L -t nat`
+2. Aplicar SNAT a cualquier paquete saliente con esa ip: `iptables -t nat -A POSTROUTING -o <interfaz> -j SNAT --to-source <ip_publica>`
+3. Para que SNAT le ponga la IP de la interfaz: `iptables -t nat -A POSTROUTING -o <interfaz> -j MASQUERADE`
+
+4. Para borrar entradas de la tabla de nat: `iptables -t nat -D POSTROUTING 2`
+
+RIP: Protocolo para armar las tablas de ruteo automaticamente
+DHCP: Te da la ip y ademas un servidor de nombre
