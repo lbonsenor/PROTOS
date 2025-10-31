@@ -5,3 +5,4 @@
 	-H "Content-Type: application/json" -d '{"rta":"entendido"}'
 ```
 
+2. `curl --cookie "session=abcdef" https://example.com`
