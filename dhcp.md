@@ -1,3 +1,5 @@
+WARNING: ESTAR EN UNA RED INTERNA
+
 1. `sudo apt install isc-dhcp-server isc-dhcp-client`
 2. Para pedir una IP: `sudo dhclient -r -d <interfaz>`
 
@@ -35,5 +37,6 @@ INTERFACESv4="<nombre_interfaz_cable_ethernet>"
 # En mi caso:
 INTERFACESv4="enp0s3"
 ```
+7. `sudo ip addr add 192.168.113.1/24 dev enp0s3`
 
 6. `systemctl restart isc-dhcp-server`
