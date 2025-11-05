@@ -8,18 +8,29 @@ zone "practica.dns.bind" {
 ```
 3. `nano /etc/bind/bind.local`
 ```
-$TTL 604801					# TTL in secs
-practica.dns.bind.	IN SOA leak.com.ar. lbonsenor.itba.edu.ar (
-				1		# Serial
-				604800		# Refresh in secs (7 days)
-				86400		# Retry in secs (1 day)
-				60		# Expire in secs (1 min)
-				60)		# Negative-Caching TTL
+	$TTL 604800 
+	@ IN SOA ns1.it.itba.edu.ar. admin.it.itba.edu.ar. ( 
+	 	202506051	; Serial (actualizar cada vez que se hace un cambio)
+	 	604800		; Refresh
+	 	86400		; Retry
+	 	2419200 Expire
+	 	604800		; Negative Cache TTL 
+		)
+	
+	; 
+	; Name Servers 
+	@	IN NS ns1.it.itba.edu.ar. 
 
-@			IN NS leak.com.ar.
-www.practica.dns.bind.	IN A 1.2.3.4
-www			IN A 2.3.4.5
-@			IN A 2.3.4.5
+	; Mail
+	@	IN MX 10 correo 
+
+	; Hosts 
+	ns1.it.itba.edu.ar.	IN A 192.168.70.1
+	pampero			IN A 192.168.70.10
+
+	; Aliases 
+	www		IN CNAME pampero 
+	correo		IN CNAME pampero
 ```
 
 4. `dig practica.dns.bind. @127.0.0.1 any`
