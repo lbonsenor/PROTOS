@@ -33,3 +33,5 @@ server {
 3. `ssl_certificate /tmp/nombre.del.sitio.pem`
 4. `ssl_certificate_key /tmp/nombre.del.sitio-key.pem`
 5. `proxy_pass http://parcial.protos.foo`
+### En /etc/hosts agregar el dominio del objetivo
+6. `127.0.0.1 seguro.protos.foo`
