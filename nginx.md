@@ -35,3 +35,6 @@ server {
 5. `proxy_pass http://parcial.protos.foo`
 ### En /etc/hosts agregar el dominio del objetivo
 6. `127.0.0.1 seguro.protos.foo`
+### Como comentario adicional
+7. Si hay problemas con los certificados podemos hacer, Seba dijo "esto es protos, no es CIA"
+8. `chmod +777`
