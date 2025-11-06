@@ -6,6 +6,7 @@
 	-u: Usa UDP en lugar de TCP
 	-z: Escaneo de puertos sin enviar datos
 	-C: Habilitar la conversion de \r a \r\n
+	-k: Keep listening (no cierra la conexion)
 
 Servidor: `nc -l [PUERTO]`
 Cliente: `nc localhost [PUERTO]`
