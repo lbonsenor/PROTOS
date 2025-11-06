@@ -23,6 +23,7 @@ MIME-Version: 1.0
 Date: Wed, 5 Nov 2025 16:36:24 -0300
 Message-ID: <CAFR8JkZBvHL8NtWQnm_DjwqyzMCm0Kqf_KVgN_EW=HJrFuDLKQ@mail.gmail.com>
 Subject: =?UTF-8?B?[CODIGO EN BASE64]?=
+X-Parcial: 2024/2
 From: "LAUTARO BONSEÑOR" <lbonsenor@itba.edu.ar>
 To: "LAUTARO BONSEÑOR" <62842@mail.sebikul.com>
 Content-Type: multipart/alternative; boundary="000000000000fd22230642dde83f"
