@@ -41,3 +41,10 @@ zone "practica.dns.bind" {
 
 7. Para ver que puertos estan abiertos: `nmap 123.456.0.1 -p [FROM]-[TO]`
 
+Mas comentarios:
+
+El @
+El numero de Serial se incrementa porque somos autoritativos (si es igual o mas chico no se actualzian los cambios)
+En Host faltaba el . Al finao
+En MX se quita "mail" y se pone un fully quialified namd (dir IP en la red o un nombre de host o mail.itba.edu.ar. o en cambiar el Host mail por correo)
+Y en www no puede ser IN A (podria ser IN CNAME pampero)
