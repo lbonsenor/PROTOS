@@ -11,3 +11,6 @@ Muestre todos los routers que intervienen en esta comunicacion
 
 4. En caso de que haya un servidor http usamos curl a [ip]:[port]
 5. Para mostrar los routers que intervienen: sudo traceroute 10.0.0.1
+
+comentarios adicional:
+"Agregar una ruta via este host" (se agrega con .0/24 porque lo decia la consigna era que el .1/24 era la direccion de dicho gateway en esa red)
